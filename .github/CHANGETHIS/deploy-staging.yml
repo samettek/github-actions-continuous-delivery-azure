@@ -1,12 +1,13 @@
 name: Staging deployment
 
-on: name : Uygulamayı hazırlayın
+on: 
+name: Stage the app
 
-on : 
-   pull_request :
-     türleri : [etiketli]
+on: 
+  pull_request:
+    types: [labeled]
 
-işleri :
-   yapı :
-     çalışır : ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
      
