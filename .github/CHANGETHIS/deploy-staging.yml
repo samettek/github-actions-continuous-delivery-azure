@@ -1,3 +1,12 @@
 name: Staging deployment
 
-on: 
+on: name : Uygulamayı hazırlayın
+
+on : 
+   pull_request :
+     türleri : [etiketli]
+
+işleri :
+   yapı :
+     çalışır : ubuntu-latest
+     
